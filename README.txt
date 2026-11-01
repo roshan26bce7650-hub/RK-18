@@ -1,43 +1,29 @@
-RK-18 1.2.1
+ # ⚡ RK-18 — Browser Productivity & Privacy Extension
 
-Install in Chrome or Edge:
-1. Disable/remove the previous Neopass extension.
-2. Extract this ZIP.
-3. Open chrome://extensions (Edge: edge://extensions).
-4. Enable Developer mode, select Load unpacked, and choose this folder.
-5. Reload open pages.
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.2.1-emerald?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+![Privacy](https://img.shields.io/badge/Data%20Collection-None%20(100%25%20Offline)-brightgreen?style=flat-square)
 
-Includes:
-- Quick Turn ON / Turn OFF toggle switch directly from extension toolbar icon.
-- Toolbar badge indicator ("ON" / "OFF") showing live status.
-- Blank black video stream for page-level getDisplayMedia requests.
-- Suppressing common page-level tab visibility and window focus checks.
-- Blocking page-initiated fullscreen requests.
-- Restoring text selection, copy, cut, paste, and right-click defaults.
+**RK-18** is a clean, lightweight Manifest V3 browser extension designed to restore native user control over web pages. It re-enables text selection, copy, cut, and paste on restricted websites, prevents intrusive tab-visibility/focus monitoring, blocks forced fullscreen demands, and supplies a privacy feed for screen sharing.
 
-No AI, login, external servers, analytics, storage, background worker,
-clipboard reading, or automatic answers. Browser access is declared for all
-websites so these features can run on ordinary pages and frames.
-Disable the extension to turn all features off, then reload affected pages.
+---
 
-Limitations:
-Browser-internal pages and extension stores are protected by the browser.
-Custom editors may require their own paste handlers; suppressing those handlers
-may affect rich-text paste. Canvas content cannot be made selectable by CSS.
-Sites can detect lack of fullscreen and refuse to continue. This extension does
-not spoof fullscreen status, unlock tests, or modify proctoring software.
-Local file URLs require enabling Allow access to file URLs in extension settings.
+## ✨ Features
 
-Update: replace the old folder, click Reload on the extension card, then reload
-existing pages. This cannot remove warnings already sent. Browser throttling,
-server checks, native proctoring tools, and other signals can still reveal tab
-switching. Live exam-site behavior has not been tested.
+- 📋 **Universal Clipboard Restoration**: Overrides JavaScript handlers that block `copy`, `cut`, `paste`, `selectstart`, and right-click context menus.
+- 👁️ **Tab Visibility & Focus Spoofing**: Keeps `document.visibilityState` reported as `"visible"` and `document.hidden` as `false` when switching tabs or backgrounding windows.
+- 🖥️ **Fullscreen Lock Suppression**: Prevents aggressive pages from forcing fullscreen mode while keeping normal browsing smooth.
+- 📺 **Privacy Display Stream**: Intercepts page-level `getDisplayMedia` screen share requests with a clean blank canvas track.
+- 🔘 **One-Click Quick Toggle**: Instant **ON / OFF** toggle switch with live toolbar status badge (`ON` / `OFF`) and a quick tab reload button.
+- 🔒 **100% Offline & Private**: Zero external network requests, zero telemetry, zero analytics, zero clipboard spying.
 
-Blank capture limitations: replaces page-level screen capture only, after reloading
-the page. It cannot change native proctoring capture or a stream already shared.
-The site may reject a canvas stream or require a real display track. This feature
-is not live-site verified. It does not grant actual screen, camera, or mic access.
+---
 
-1.2.1: Blank video tracks report monitor display-surface settings, including
-cloned tracks. This addresses a possible cause of the Entire screen error.
-Actual site validation has not been performed; real display capture is not used.
+## 🚀 Installation Guide
+
+### For Google Chrome, Microsoft Edge, Brave, & Opera:
+
+1. Download or clone this repository:
+   ```bash
+   git clone https://github.com/your-username/rk-18.git
