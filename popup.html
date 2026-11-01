@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RK-18</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <img src="icon48.png" alt="RK-18" class="logo-avatar">
+        <div>
+          <h1>RK-18</h1>
+          <span class="version">v1.2.1</span>
+        </div>
+      </div>
+      <div id="statusPill" class="status-pill active">ACTIVE</div>
+    </div>
+
+    <div class="card toggle-card">
+      <div class="toggle-info">
+        <span class="toggle-title">Extension Status</span>
+        <span id="toggleSub" class="toggle-sub">All features running</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="powerToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="features-section">
+      <div class="section-title">FEATURES ACTIVE</div>
+      <ul class="feature-list">
+        <li>
+          <span class="check">✓</span>
+          <span>Copy, cut & paste unlocked</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>Tab visibility & focus spoofing</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>Fullscreen restriction blocked</span>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <span>Blank screen share stream</span>
+        </li>
+      </ul>
+    </div>
+
+    <button id="reloadBtn" class="reload-button">
+      <span class="btn-icon">🔄</span> Reload Current Page
+    </button>
+    <div id="reloadNotice" class="reload-notice">Reload page after toggling to apply changes.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

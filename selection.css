@@ -1,0 +1,5 @@
+/* Restore text selection, including pages that disable it globally. */
+:root, body, body * {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
