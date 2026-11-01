@@ -24,6 +24,4 @@
 
 ### For Google Chrome, Microsoft Edge, Brave, & Opera:
 
-1. Download or clone this repository:
-   ```bash
-   git clone https://github.com/your-username/rk-18.git
+ 
