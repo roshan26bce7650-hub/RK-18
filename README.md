@@ -1,3 +1,7 @@
+
+ 
+ 
+ 
  # ⚡ RK-18 — Browser Productivity & Privacy Extension
 
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
